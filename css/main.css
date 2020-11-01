@@ -98,3 +98,11 @@ select {
 
 .section-1 {
 }
+
+.font1 {
+	color: #3a3a3a;
+	font-family: Segoe UI, Helvetica Neue, Helvetica, sans-serif;
+	font-size: 17px;
+	line-height: 1.5;
+	font-weight: 400;
+}

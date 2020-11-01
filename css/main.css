@@ -1,5 +1,100 @@
-h1 {
-	font-family: 'Courier New', Courier, monospace;
-	text-align: center;
-	font-size: large;
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/* Remove default padding */
+ul[class],
+ol[class] {
+	padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+	margin: 0;
+}
+
+/* Set core body defaults */
+body {
+	scroll-behavior: smooth;
+	text-rendering: optimizeSpeed;
+	line-height: 1.5;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	* {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+		scroll-behavior: auto !important;
+	}
+}
+
+.sidebar {
+	width: 160px;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	overflow-x: hidden;
+	margin-top: 100px;
+}
+
+.sidebar div {
+	padding: 6px 8px 6px 16px;
+	text-decoration: none;
+	font-size: 25px;
+	color: #818181;
+	display: block;
+}
+
+.sidebar div:hover {
+	color: #f1f1f1;
+}
+
+.main {
+	margin-left: 160px;
+}
+
+.top-banner {
+	height: 40px;
+	display: grid;
+	grid-template-columns: 100px 1fr 100px;
+	justify-content: space-between;
+	align-content: center;
+	border: solid 1px black;
+	margin-top: 2em;
+	margin-right: 2em;
+}
+
+.darkmode-toggle {
+	height: inherit;
+	grid-column: 3;
+	background-color: gray;
+}
+
+.section-1 {
 }
